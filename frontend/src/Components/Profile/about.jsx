@@ -1,8 +1,9 @@
 import React from 'react'
+import LineChart from './chart';
 
 const About = () => {
   return (
-    <div className="w-full h-full p-8">
+    <div className="w-full h-[90.8vh] overflow-y-scroll p-8">
       <h1 className="title text-[36px] font-bold font-noto">About</h1>
       <div className="totals grid grid-cols-2 gap-8 mt-4">
         <div className="total bg-greenGrad p-4 rounded-2xl font-semibold touched h-[120px] shadowed flex items-center">
@@ -52,6 +53,7 @@ const About = () => {
           <div className="w-full val text-center text-3xl my-3">₹12304</div>
         </div>
       </div>
+      <LineChart />
     </div>
   );
 }
