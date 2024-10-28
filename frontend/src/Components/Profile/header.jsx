@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className="w-full min-h-[50px] p-2 flex justify-between bg-slate-700">
+    <div className="w-full min-h-[50px] p-2 flex justify-between ">
       <div className="name text-[30px]">
         Hello <span className="text-blue-400 touched font-bold">Admin</span>
       </div>

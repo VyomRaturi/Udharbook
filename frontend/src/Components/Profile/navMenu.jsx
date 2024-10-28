@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavMenu = () => {
   return (
-    <div className='bg-slate-700 w-[30%] max-w-[250px] h-[90vh]'>
+    <div className=' w-[30%] max-w-[250px] h-[90.8vh] inline-block'>
       <div className="avatar w-full">
         <img src="src\public\boy.png" alt="Photo" className='w-[100px] mx-auto pt-4'/>
       </div>
