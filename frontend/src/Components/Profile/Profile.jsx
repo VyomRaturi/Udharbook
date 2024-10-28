@@ -1,6 +1,7 @@
 import Header from "./header";
 import NavMenu from "./navMenu";
 import About from "./about";
+import Transaction from "./transaction";
 
 const Profile = () => {
   return (
@@ -9,7 +10,7 @@ const Profile = () => {
       <div className="main flex">
         <NavMenu />
         <div className="w-full bg-[#212121] rounded-2xl">
-          <About />
+          <Transaction />
         </div>
       </div>
     </div>

@@ -348,3 +348,25 @@ input[type="password"]::-ms-reveal {
 .shadowed{
   box-shadow: 1px -1px 0px #18cefc;
 }
+.expense-table {
+  border-collapse: separate;
+  border-spacing: 2px 5px;
+}
+
+.expense-table th,
+.expense-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.expense-table th{
+  background-color: #598e03;
+  border-radius: 12px;
+}
+
+tr.odd td{
+  background-color: #18cefc;
+  color: #000;
+}
+tr.even td{
+  background-color: #5e909cc0;
+}
