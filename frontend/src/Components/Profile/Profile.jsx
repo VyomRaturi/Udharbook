@@ -22,7 +22,7 @@ const Profile = () => {
     <div className="text-white bg-[#011a32]">
       <Header />
       <div className="main flex">
-        <NavMenu navChose setNavChose/>
+        <NavMenu navChose={navChose} setNavChose={setNavChose } />
         <div className="w-full bg-[#212121] rounded-2xl">
           {renderComponent()}
         </div>
