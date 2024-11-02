@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Game Board CSS */
 
-*,
+
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 
 .clearfix::after {
   clear: both;
@@ -114,7 +114,7 @@
   height: 35%;
   float: left;
   margin: 7.5%;
-  /* box-shadow: -2px 14px 28px rgba(0, 0, 0, 0.25), -2px 10px 10px rgba(0, 0, 0, 0.22); */
+  
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -309,4 +309,141 @@
   }
 }
 
-/* Game Board CSS Ends */
+.logo {
+  width: 50px; 
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; 
+}
+
+.navbar .logo {
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-weight: 600; 
+  font-size: 1.5em; 
+  color: #f2e6e6; 
+}
+
+
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+ 
+.hero {
+  background-color: #f8e1f4; 
+  padding: 2.5rem 0;
+}
+
+.text-accent-primary {
+  color: #9b51e0; 
+}
+
+.get-started-button {
+  background-color: #9b51e0;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem; 
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #7a41b5;
+}
+
+
+.svg-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.svg-1,
+.svg-2 {
+  position: absolute;
+  transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.svg-1 {
+  top: 0;
+  right: 25%; 
+  width: 40%;
+  max-width: 200px;
+}
+
+.svg-2 {
+  top: 33%;
+  right: 25%; 
+  width: 50%;
+  max-width: 250px;
+}
+
+.svg-1:hover,
+.svg-2:hover {
+  transform: scale(1.1); 
+}
+
+
+@media (max-width: 1024px) {
+  .svg-1, .svg-2 {
+      right: 10%; 
+  }
+}
+
+
+
+  .svg-1, .svg-2 {
+      position: static;
+      transform: none;
+      width: 60%;
+      margin-top: 1rem;
+  }
+}
+
+.wallet-image .wallet-svg-icon {
+  width: 2000px; 
+  height: auto;
+  margin-left: 250px; 
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .wallet-svg-icon {
+      width: 150px;
+      margin: 0 auto;
+  }
+}
+
+
+body {
+  background: radial-gradient(circle at center, #a191ea, #151b49); 
+  color: var(--color-text-primary);
+
+}
+
+
+
+
+
+
+
+

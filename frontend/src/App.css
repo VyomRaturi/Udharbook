@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-start: #1a202c;
+    --color-bg-end: #2d3748;
+    --color-accent-primary: #3498db;
+    --color-accent-secondary: #2ecc71;
+    --color-accent-tertiary: #e74c3c;
+    --color-text-primary: #f7fafc;
+    --color-text-secondary: #a0aec0;
+    --color-neutral-100: #f7fafc;
+    --color-neutral-200: #edf2f7;
+    --color-neutral-300: #e2e8f0;
+    --color-neutral-400: #cbd5e0;
+    --color-neutral-500: #a0aec0;
+    --color-success: #2ecc71;
+    --color-warning: #f39c12;
+    --color-error: #e74c3c;
+    --color-info: #3498db;
+    --color-bg-gradient-start: #3b338b;
+    --color-bg-gradient-end: #1a1d33;
+  }
+  }
+  html,
+  body {
+    scroll-behavior: smooth;
+    background: radial-gradient(circle at center, var(--color-bg-gradient-start), var(--color-bg-gradient-end));
+    color: var(--color-text-primary);
+  }
+
+
+
+@layer components {
+  .signature {
+    font-family: Agustina, sans-serif;
+  }
+
+  .active {
+    @apply text-text-primary border-b-2 border-accent-primary;
+  }
+
+  .deactive {
+    @apply text-text-secondary border-b-0;
+  }
+}
+
+@layer utilities {
+  .hover-gradient {
+    @apply transition-all duration-300;
+  }
+
+  .hover-gradient:hover {
+    @apply opacity-90;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-bg-end;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-accent-primary rounded-md;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    header nav a {
+        font-size: 14px;
+    }
+}
+
+body {
+    background-color: #1a2a6c; 
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-container {
+    min-height: 100vh;
+    background-color: #1a2a6c; 
+  }
+
+  body {
+    background: radial-gradient(circle at center, #a191ea, #151b49); 
+    color: var(--color-text-primary);
+  }
+  .menu-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .navbar.open {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+      background-color: #7d3cff;
+      color: #ffffff;
+      font-size: 1.5em;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+  }
+  
