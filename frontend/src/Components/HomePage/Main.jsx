@@ -3,7 +3,7 @@ import React from 'react'
 const Main = () => {
   return (
     <div>
-       <main className="flex-grow bg-white py-8 bg-blue-950">
+       <main className="flex-grow bg-blue py-8 bg-blue-950">
         <div className=" mx-auto px-4  flex flex-col bg-blue-950 w-10/12 h-[1000px] justify-center flex items-center rounded-xl gap-4 ">
           <h1 className="text-4xl font-bold text-center mb-4 text-white ">Manage Your Expenses</h1>
 
